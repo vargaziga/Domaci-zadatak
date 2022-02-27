@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Domaci zadatak</title>
+</head>
+<body>
+    
+<script>
+
+let prviBroj = parseInt(prompt('Unesi broj'));
+
+let operacija = prompt('Unesi racunsku operaciju');
+
+let drugiBroj = parseInt(prompt('Unesi drugi broj'));
+
+
+function izracunaj(a, operacija, b){
+
+let rezultat;
+
+switch(operacija) {
+    case '+':
+        rezultat= a+b
+        break
+    case '-':
+        rezultat= a-b
+        break   
+    case '*':
+        rezultat = a*b
+        break
+    case '/':
+        rezultat = a/b
+        break
+    
+    default : 
+        rezultat= 'Niste uneli operaciju'
+}
+
+alert(rezultat)
+
+
+}
+
+izracunaj(prviBroj,operacija,drugiBroj);
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
